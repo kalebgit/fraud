@@ -1,0 +1,101 @@
+### ============================================================
+### DATOS — nunca versionar CSVs pesados ni artefactos de Delta
+### ============================================================
+/data/
+*.csv
+*.tsv
+*.parquet
+*.zip
+
+# Tablas Delta (bronze/silver/gold) si las generas dentro del repo
+/bronze/
+/silver/
+/gold/
+*.delta/
+_delta_log/
+
+### ============================================================
+### PYTHON
+### ============================================================
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.log
+
+### ============================================================
+### PYSPARK / HADOOP (basura que genera Spark local en macOS/Linux)
+### ============================================================
+derby.log
+metastore_db/
+spark-warehouse/
+.spark-warehouse/
+
+### ============================================================
+### MODELOS SERIALIZADOS Y ARTEFACTOS DE ML
+### ============================================================
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.onnx
+/api/models/*.pkl
+/api/models/*.joblib
+mlruns/
+mlflow.db
+
+### ============================================================
+### VARIABLES DE ENTORNO Y SECRETOS
+### ============================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+kaggle.json
+.kaggle/
+
+### ============================================================
+### DOCKER
+### ============================================================
+docker-compose.override.yml
+
+### ============================================================
+### FRONTEND — ANGULAR / NODE
+### ============================================================
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.angular/
+/frontend/.env
+npm-debug.log*
+yarn-error.log*
+
+### ============================================================
+### VPS / DESPLIEGUE
+### ============================================================
+*.pid
+nginx/certs/
+*.crt
+
+### ============================================================
+### SISTEMA OPERATIVO / EDITOR
+### ============================================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+### ============================================================
+### DATABRICKS (si sincronizas con Databricks Repos/CLI)
+### ============================================================
+.databricks/
+

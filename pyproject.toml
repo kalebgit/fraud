@@ -1,0 +1,24 @@
+[project]
+name = "fraud"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "delta-spark>=4.4.0",
+    "fastapi[standard]>=0.141.1",
+    "jupyterlab>=4.6.3",
+    "kaggle>=2.2.4",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "pyarrow>=25.0.1",
+    "pydantic>=2.13.4",
+    "pyspark>=4.2.0",
+    "scikit-learn>=1.9.0",
+    "scipy>=1.18.1",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.14.6",
+    "umap-learn>=0.5.12",
+    "uvicorn>=0.52.4",
+]
